@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.kisantractoryojana.in/web/form by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Oct 2024 06:27:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/admin/images/favicon.html">
+	    <link rel="stylesheet" href="../public/admin/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../public/admin/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../public/admin/vendor/datatables/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
+<link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<link href="../../cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet"/>
+
+</head>
+<style>
+    .costume_action{
+    padding: 1px 5px;
+    }
+    .table td{
+    padding: 0 .75rem;
+}
+.remove_x{
+    float: right;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+}
+/* td> img{
+    height: 70px;
+} */
+ 
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0rem;
+}
+.form-panel .box {
+  padding: 10px;
+  background: #F8F9FC !important;
+}
+#wrapper #content-wrapper {
+    background-color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+}
+.card {
+    background-color: #F8F9FC;
+}
+.border-left-primary {
+    border-left: 0 !important;
+}
+</style>
+<body id="page-top">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="wrapper">
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+$(function() {
+    var pgurl = window.location.href;         
+    $("#wrapper ul li a").each(function() {
+        var current_url=$(this).attr("href");
+        if (pgurl.match(current_url)){
+            // $(this).addClass("active");
+            // $(this).closest('li.nav-item').addClass("active");
+            // $(this).closest('.collapse').addClass("show");
+            // $(this).closest('.collapse').css("display", "block");
+            // console.log($(this).parent().parent().prop('className'));
+
+        }else{
+            // $(this).closest('li.nav-item').removeClass("active");
+            // $(this).closest('div.collapse').removeClass("show");
+        }
+    });
+   
+
+});
+}, false);
+</script>
+<div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+            
+            
+<style>
+     .logo img {
+    height: 67px;
+}
+ .logo-right img {
+    height: 67px;
+    float: right;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding: 0;
+}
+nav .nav-link {
+    color: #fff;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0rem;
+}
+header {
+    padding: 0px;
+    border-bottom: 5px solid #a5cf45;
+    margin: 0 0 5px 0;
+}
+</style>
+
+<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-8 col-md-6">
+					<div class="logo">
+						<a href="../index.html"><img src="../public/home/assets/images/logo.jpg"></a>
+						<h4></h4>
+					</div>
+				</div>
+				<div class="col-4 col-md-6">
+					<div class="logo-right">
+						<img src="../public/home/assets/images/azadikaamritmahotsav.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <style>
+  .navbar-nav .nav-link {
+    text-align: center;
+    width: 100%;
+  }
+  .bg-primary_ {
+    background-color: #056736 !important;
+}
+.top-menu-myaccount {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.top-menu-myaccount ul {
+    list-style: none;
+}
+@media (max-width: 480px) {
+    .top-menu-myaccount li {
+        margin-bottom: 10px;
+    }
+}
+.top-menu-myaccount li {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.top-menu-myaccount li a.active {
+    color: #fff !important;
+}
+
+.top-menu-myaccount li a.active {
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.top-menu-myaccount li a {
+    color: #000 !important;
+}
+@media (max-width: 480px) {
+    .top-menu-myaccount li a {
+        font-size: 12px;
+    }
+}
+.top-menu-myaccount li a {
+    color: #000;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background: #f3f3f3;
+}
+</style>
+            <div class="container-fluid">
+        
+<style>
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+
+    .form-panel .heading {
+        background: #0b81c8;
+        color: #fff;
+        padding: 8px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .form-panel .box {
+  padding: 10px;
+  background: #e8eaee38;
+    background-color: rgba(232, 234, 238, 0.22);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+  color: #000;
+}
+p {
+  color: #000;
+}
+</style>
+
+<div class="container" style="
+    margin-top: 35px;
+">
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post" role="form" id="state_form" action="https://www.kisantractoryojana.in/web/form" enctype="multipart/form-data">
+                <div class="form-panel">
+                    <div class="heading"><i class="fa fa-bars"></i> Application Form</div>
+                    <div class="box">
+                        <!-- <input type="hidden" name="id" value="267"> -->
+                        <input type="hidden" name="application_form_no" id="application_form_no" value="MA20240701267">
+
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Title</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">Subsidy Application form for tractor yojana in the State of Maharashtra</p>
+                                <input type="hidden" name="title" id="title" value="Subsidy Application form for tractor yojana">
+                            </div>
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Name of Yojana</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">KISSAN TRACTOR SUBSIDY YOJANA</p>
+
+                                <input type="hidden" name="date" id="date" value="15 Dec 2023">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Type of Subsidy</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">Partial with release order on the name of dealer</p>
+                            </div>
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Mode of Selection</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">Any one can Apply who have Farming land.</p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Category</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">Open</p>
+                            </div>
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>State</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  Trying to access array offset on value of type null</p>
+<p>Filename: user/reg_done.php</p>
+<p>Line Number: 108</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/vyapparindia/public_html/kisantractoryojana.in/application/views/user/reg_done.php<br />
+			Line: 108<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/vyapparindia/public_html/kisantractoryojana.in/application/views/user/index.php<br />
+			Line: 11<br />
+			Function: include			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/vyapparindia/public_html/kisantractoryojana.in/application/controllers/Web.php<br />
+			Line: 367<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /home/vyapparindia/public_html/kisantractoryojana.in/index.php<br />
+			Line: 320<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div></p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Published Date</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">10 July 2022</p>
+                            </div>
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Closing Date</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">15 Dec 2023</p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                            <div class=" col-md-6">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Apply As</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <input type="radio" class="apply_as" id="apply_as_iind" name="apply_as" value="Individual" checked=""> Individual Land owner&nbsp;&nbsp;&nbsp;<input  id="apply_as_part" type="radio" class="apply_as" name="apply_as" value="Partnership"> leaseholder
+                            </div>
+                            <div class=" col-md-2">
+                                <p class="m-0"><b>Minimum Farming Land required for subsidy</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <p class="m-0">any one can apply</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-panel m-0">
+                    <div class="heading"><i class="fa fa-user"></i> Personal Information</div>
+                    <div class="box">
+                       
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p><b>Type of Subsidy *</b></p>
+                            </div>
+                            <div class=" col-md-4">
+                                <input type="text" name="type" id="type" class="form-control" value="Partial in form of release order" readonly="" required="">
+                            </div>
+
+
+
+                            <div class=" col-md-2">
+                                <label for="inputState">Tractor Brand *</label>
+                            </div>
+                            <div class=" col-md-4">
+                            <div class="" id="brand_div_id">
+                                <select class="form-control" id="brand" required="" name="brand">
+                                    <option value="">-- select one -- </option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <label for="inputDistrict">Select Tractor Brand Model *</label>
+
+                            </div>
+                            <div class=" col-md-4">
+                            <div class="" id="model_div_id">
+                                <select class="form-control" id="model" required="" name="model">
+                                    <option value="">-- select one -- </option>
+                                </select>
+                                </div>
+
+                            </div>
+                            <div class=" col-md-2">
+                                <p><b>On Road Price(Lacs)*</b></p>
+                            </div>
+                            <div class=" col-md-4">
+
+                                <select class="form-control" id="price" required="" name="price">
+
+                                </select>
+
+                                <span id="minop" style="color:#00CC00">You have to pay 50% of On Road Price (either in cash or through loan) and Rest amount will be given as subsidy.</span>
+
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class=" col-md-2">
+                                <p><b>First Name *</b></p>
+                            </div>
+                            <div class=" col-md-8">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="First Name" onkeyup="onLoadname('name')" required="">
+                            </div>
+                        </div>
+                            <div class="form-row">
+                                <div class=" col-md-2">
+                                    <p><b>Category Name *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <select name="category" id="category" class="form-control" required="">
+                                        <option value="GENRAL">GENRAL</option>
+                                        <option value="OBC">OBC</option>
+                                        <option value="SC">SC</option>
+                                        <option value="ST">ST</option>
+                                        <option value="Ex-Service man">Ex-Service man</option>
+                                    </select>
+                                </div>
+                                <div class=" col-md-2">
+                                    <p><b>Gender *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <select name="gender" id="gender" class="form-control" required="">
+                                        <option value="">Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-2">
+                                    <p><b>Mobile Number *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="text" name="mobile" id="mobile" value="" readonly="" class="form-control">
+                                </div>
+                                <div class=" col-md-2">
+                                    <p><b>Whatsapp Number </b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="number" onkeydown="javascript: return event.keyCode == 69 ? false : true" id="whatsapp" name="whatsapp" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-2">
+                                    <p><b>State *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                <div class="" id="state_div_id"></div>
+
+                                </div>
+                                <div class=" col-md-2">
+                                    <p><b>District *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                <div class="" id="city_div_id"></div>
+
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-2">
+                                    <p><b>Res. Address *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="text" name="address" id="address" class="form-control" required="">
+                                </div>
+                                <div class=" col-md-2">
+                                    <p><b>Pincode </b></p>
+                                </div>
+                                <div class=" col-md-4">
+
+                                    <input type="text" id="pincode" name="pincode" class="form-control" required="">
+
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class=" col-md-2">
+                                    <p><b>Email *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="email" name="email" id="email" class="form-control" readonly="" value="">
+                                </div>
+                                <div class=" col-md-2">
+                                    <p><b>PAN Number (not compulsory) </b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="text" name="pan" id="pan" maxlength="10" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-4">
+                                    <p><b>Whether Applicant is Indian Citizen *</b></p>
+                                </div>
+                                <div class=" col-md-2">
+                                    <input type="radio" name="citizen" id="citizen_yes" value="Yes" checked="" required=""> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="citizen" id="citizen_no" value="No"> No
+                                </div>
+                                <div class=" col-md-4">
+                                    <p><b>Residential of Indian as IT Rule * </b></p>
+                                </div>
+                                <div class=" col-md-2">
+                                    <input type="radio" name="itrule" id="itrule_yes" value="Yes" checked="" required=""> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="itrule" id="itrule_no"  value="No"> No
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-2">
+                                    <p><b>Date of Birth *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="date" name="dob" id="dob" class="form-control" required="">
+                                </div>
+                                <div class=" col-md-4">
+                                    <p><b>Physical Disability * </b></p>
+                                </div>
+                                <div class=" col-md-2">
+                                    <input type="radio" name="physical" id="physical_yes" value="Yes" required=""> Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="physical" id="physical_no" value="No"> No
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-3">
+                                    <p><b>Father/Husband Name *</b></p>
+                                </div>
+                                <div class=" col-md-9">
+                                    <input type="text" id="father_husband_last_name" name="father_husband_last_name" placeholder="Father Name" class="form-control" onkeyup="onLoadname('father_husband_last_name')" required="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class=" col-md-3">
+                                    <p><b>Marital Status *</b>(In case of married women Husband's Name)</p>
+                                </div>
+                                <div class=" col-md-9">
+                                    <input type="radio" class="mt" name="marital" name="marital_sin"  value="Single" required=""> Single&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="mt" name="marital" name="marital_mer" value="Married"> Married&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="mt" name="marital" name="marital_wi" value="Widower"> Widower&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" class="mt" name="marital" name="marital_di" value="Divorce"> Divorce
+                                </div>
+                                <div class=" col-md-2">
+                                    <p><b>Login Password *</b></p>
+                                </div>
+                                <div class=" col-md-4">
+                                    <input type="password" name="password" class="form-control" id="password" required="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </div>
+
+
+
+    </div>
+    <div class="form-panel m-0">
+        <div class="heading"><i class="fa fa-check"></i> Declaration</div>
+        <p style="padding:15px;margin:0;text-align:justify;">
+            I, <span id="namespan" style="font-weight:700;">info</span> of/son of/wife of Shri <span id="father_husband_last_namespan" style="font-weight:700;">info</span> hereby confirm that I have been authorized to submit this application and the information given above is true and correct. Any wrong information/misrepresentation/suppression of facts will make us ineligible for this Dealership. That if any information/declaration given by us in application or in any document submitted by us in support of application for award of the Subsidy shall be found to be untrue or incorrect or false, the Company would be within its rights to withdraw/terminate the subsidy and that we would have no claim, whatsoever, against the Corporation for such withdrawal/termination.
+        </p>
+        <center><input type="checkbox" required="" name="confirm" id="confirm" checked=""> Accept *<br><br></center>
+    </div>
+    <div class="form-panel m-0">
+        <div class="heading"><i class="fa fa-image"></i> Applicant Photo</div>
+        <div class="box">
+            <div class="form-row">
+                <div class="col-md-6">
+                    <p><b>Applicant Photo *</b></p>
+                    <input type="file" class="form-control" style="height:auto;" id="file" name="applicant_photo" required="" onchange="return fileValidation()">
+                    <div id="imagePreview"></div>
+                    <script>
+                        function fileValidation() {
+                            var fileInput =
+                                document.getElementById('file');
+
+                            var filePath = fileInput.value;
+
+                            // Allowing file type
+                            var allowedExtensions =
+                                /(\.jpg|\.jpeg)$/i;
+
+                            if (!allowedExtensions.exec(filePath)) {
+                                alert('Invalid file type');
+                                fileInput.value = '';
+                                return false;
+                            } else {
+
+                                // Image preview
+                                if (fileInput.files && fileInput.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function(e) {
+                                        document.getElementById(
+                                                'imagePreview').innerHTML =
+                                            '<img style="width:10%;height:10%" src="' + e.target.result +
+                                            '"/>';
+                                    };
+
+                                    reader.readAsDataURL(fileInput.files[0]);
+                                }
+                            }
+                        }
+                    </script>
+
+
+
+                    <span style="font-size:11px;">Format - jpg only, Max Size 50kb, Dimension 5.5cm X 5.5cm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-panel m-0">
+        <div class="heading"><i class="fa fa-file"></i> Applicant ID and Address Proof</div>
+        <div class="box">
+            <div class="form-row">
+                <div class="col-md-6">
+                    <p><b>Applicant ID Proof *</b></p>
+                    <input type="file" class="form-control" id="file1" style="height:auto;" name="applicant_id" required="" onchange="return fileValidation1()">
+                    <div id="imagePreview1"></div>
+                    <script>
+                        function fileValidation1() {
+                            var fileInput =
+                                document.getElementById('file1');
+
+                            var filePath = fileInput.value;
+
+                            // Allowing file type
+                            var allowedExtensions =
+                                /(\.jpg|\.jpeg)$/i;
+
+                            if (!allowedExtensions.exec(filePath)) {
+                                alert('Invalid file type');
+                                fileInput.value = '';
+                                return false;
+                            } else {
+
+                                // Image preview
+                                if (fileInput.files && fileInput.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function(e) {
+                                        document.getElementById(
+                                                'imagePreview1').innerHTML =
+                                            '<img style="width:10%;height:10%" src="' + e.target.result +
+                                            '"/>';
+                                    };
+
+                                    reader.readAsDataURL(fileInput.files[0]);
+                                }
+                            }
+                        }
+                    </script>
+
+                    <span style="font-size:11px;">Format - jpg only, Max Size 100kb, Dimension 5.5cm X 5.5cm</span>
+                </div>
+                <div class="col-md-6">
+                    <p><b>Applicant Address Proof *</b></p>
+                    <input type="file" class="form-control" id="file2" style="height:auto;" name="applicant_address" required="" onchange="return fileValidation2()">
+                    <div id="imagePreview2"></div>
+                    <script>
+                        function fileValidation2() {
+                            var fileInput =
+                                document.getElementById('file2');
+
+                            var filePath = fileInput.value;
+
+                            // Allowing file type
+                            var allowedExtensions =
+                                /(\.jpg|\.jpeg)$/i;
+
+                            if (!allowedExtensions.exec(filePath)) {
+                                alert('Invalid file type');
+                                fileInput.value = '';
+                                return false;
+                            } else {
+
+                                // Image preview
+                                if (fileInput.files && fileInput.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function(e) {
+                                        document.getElementById(
+                                                'imagePreview2').innerHTML =
+                                            '<img style="width:10%;height:10%" src="' + e.target.result +
+                                            '"/>';
+                                    };
+
+                                    reader.readAsDataURL(fileInput.files[0]);
+                                }
+                            }
+                        }
+                    </script>
+                    <span style="font-size:11px;">Format - jpg only, Max Size 100kb, Dimension 5.5cm X 5.5cm</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-panel m-0">
+            <div class="heading"><i class="fa fa-image"></i> Bank Passbook</div>
+            <div class="box">
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <p><b>Bank Passbook *</b></p>
+                        <input type="file" class="form-control" style="height:auto;" id="file4" name="passbook" required="" onchange="return fileValidation4()">
+                        <div id="imagePreview4"></div>
+                        <script>
+                            function fileValidation4() {
+                                var fileInput =
+                                    document.getElementById('file4');
+
+                                var filePath = fileInput.value;
+
+                                // Allowing file type
+                                var allowedExtensions =
+                                    /(\.jpg|\.jpeg)$/i;
+
+                                if (!allowedExtensions.exec(filePath)) {
+                                    alert('Invalid file type');
+                                    fileInput.value = '';
+                                    return false;
+                                } else {
+
+                                    // Image preview
+                                    if (fileInput.files && fileInput.files[0]) {
+                                        var reader = new FileReader();
+                                        reader.onload = function(e) {
+                                            document.getElementById(
+                                                    'imagePreview4').innerHTML =
+                                                '<img style="width:10%;height:10%" src="' + e.target.result +
+                                                '"/>';
+                                        };
+
+                                        reader.readAsDataURL(fileInput.files[0]);
+                                    }
+                                }
+                            }
+                        </script>
+
+
+
+                        <span style="font-size:11px;">Format - jpg only</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" col-sm-6">
+            <input type="submit" name="submit" onclick="ajax_save('state_form', page_red,true);" style="margin-top:15px;" class="btn btn-primary mt-20" value="Submit">
+        </div>
+        <!-- <div class=" col-sm-6 text-right">
+										<a href="register.php" style="margin-top:15px;" class="btn btn-primary mt-20">Back</a>
+									</div>	 -->
+    </div>
+                        </form>
+</div>
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // $('#response_message').modal('show');
+    $('#state_form').on('submit', () => {
+        return false;
+    });
+
+    $('#state_form').keypress((e) => {
+
+        // Enter key corresponds to number 13
+        if (e.which === 13) {
+            //   return false;
+                            // ajax_save('state_form', page_red);
+                        console.log('form submitted');
+        }
+    })
+                all_edit_data();
+                get_state()
+                get_city();
+                get_brand();
+get_model();
+
+
+onLoadname('name');
+
+
+
+
+}, false);
+
+
+function page_red(data_) {
+
+
+            jQuery.getScript('https://cdn.jsdelivr.net/npm/sweetalert2@11', function() {
+    
+    Swal.fire({
+      title: 'Application Submitted Successfully!',
+      text: " Your Login Detail",
+      icon: 'success',
+      html: data_.html,
+      showCancelButton: false,
+      confirmButtonColor: '#C64EB2',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Ok'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = "../costumer/service681a.html?id=1";
+      } else {
+        console.log('clicked cancel');
+      }
+    })
+    
+    })
+
+
+}
+function all_edit_data() {
+					var json_data = '';
+                    console.log('json_data',json_data);
+                    if(!json_data){
+                        return;
+                    }
+                     //json_data = json_data.replace(/\r?\n/g, ' ');
+                     json_data = json_data.replace(/[\r\n']/g, ' ');
+
+                    json_data=JSON.parse(json_data);
+                    console.log('json_data',json_data);
+
+					Object.keys(json_data).forEach(function (k) {
+						var key_value = $('#' + k);
+						if (key_value) {
+                           
+                            if(typeof json_data[k]!='object'){
+                                if(json_data[k]){
+                                    key_value.val(json_data[k]);
+                                }
+                            }
+						}
+					});
+				}
+function get_state() {
+
+$('#state_div_id').html("");
+var base_url = 'https://www.kisantractoryojana.in/';
+var div_data = '<option value=""></option>';
+$.ajax({
+    type: "GET",
+    url: base_url + "common/state",
+    data: {
+        'class_id': 'class_id',
+        'value':""
+    },
+    dataType: "html",
+    success: function (data) {
+       
+        $('#state_div_id').html(data);
+    }
+});
+}
+
+
+
+
+function get_city() {
+
+
+$('#city_div_id').html("");
+var base_url = '../index.html';
+
+var state_id= $('#state_id').val();
+if(!state_id){
+    state_id="";
+}
+var div_data = '<option value=""></option>';
+$.ajax({
+    type: "GET",
+    url: base_url + "common/city",
+    data: {
+        'state_id': state_id,
+        'value':""
+    },
+    dataType: "html",
+    success: function (data) {
+       
+        $('#city_div_id').html(data);
+    }
+});
+}
+
+
+function get_brand() {
+
+$('#brand_div_id').html("");
+var base_url = '../index.html';
+var div_data = '<option value=""></option>';
+$.ajax({
+    type: "GET",
+    url: base_url + "common/brand",
+    data: {
+        'brand': 'brand',
+    },
+    dataType: "html",
+    success: function (data) {
+       
+        $('#brand_div_id').html(data);
+    }
+});
+}
+
+
+
+
+function get_model() {
+
+
+$('#model_div_id').html("");
+var base_url = '../index.html';
+
+var brand= $('#brand').val();
+if(!brand){
+    brand="";
+}
+var div_data = '<option value=""></option>';
+$.ajax({
+    type: "GET",
+    url: base_url + "common/model",
+    data: {
+        'brand': brand,
+        'value':""
+    },
+    dataType: "html",
+    success: function (data) {
+       
+        $('#model_div_id').html(data);
+    }
+});
+}
+
+function model_details(){
+    var model= $('#model').val();
+    var base_url = '../index.html';
+    $('#price').empty();
+    $.ajax({
+    type: "GET",
+    url: base_url + "common/model_details",
+    data: {
+        'model': model,
+        'value':""
+    },
+    dataType: "json",
+    success: function (data) {
+       
+        var div_data = '<option value="'+data.model_price+'">'+data.model_price+'</option>';
+
+        $('#price').empty().html(div_data);
+        
+    }
+});  
+}
+
+function onLoadname(div_id){
+ var sys_value=$('#'+div_id).val();
+ $('#'+div_id+'span').empty().html(sys_value);
+}
+
+</script>        </div>
+        </div>
+            </div>
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="../login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">File title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="input-group">
+  <input class="form-control" type="file" id="ingredient_file">
+  <!-- <button class="btn btn-outline-secondary" type="button">Button</button> -->
+</div>
+<div id="progress-wrp">
+    <div class="progress-bar"></div>
+    <div class="status">0%</div>
+</div>
+<div class="row" id='file_doc_link'>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script type="text/javascript" src="../public/admin/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../public/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../public/admin/js/sb-admin-2.min.js"></script>
+    <script type="text/javascript" src="../public/admin/vendor/chart.js/Chart.min.js"></script>
+    <script type="text/javascript" src="../public/admin/js/demo/chart-area-demo.js"></script>
+    <script type="text/javascript" src="../public/admin/js/demo/chart-pie-demo.js"></script>
+    <script type="text/javascript" src="../public/admin/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../public/admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="../public/admin/js/demo/datatables-demo.js"></script>
+    <script type="text/javascript" src="../public/admin/js/demo/datatables-demo.js"></script>
+    <script type="text/javascript" src="../public/admin/js/custom_admin5034.js?1=1"></script>
+    <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<link href="../../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="../../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="../public/admin/tinymce/tinymce.min.js" ></script>
+
+<!--  -->
+<link rel="stylesheet" href="../../www.tiny.cloud/css/codepen.min.css">
+<!-- <script src="https://www.kisantractoryojana.in/public/admin/editer/tinymce/tinymce.min.js" ></script> -->
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../ilikenwf.github.io/jquery.mjs.nestedSortable.js"></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+<style>
+/* .toast_top_center {
+    width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  left:50% !important;
+    top: 12px !important;
+} */
+</style>
+<script>
+	var Base_url='../index.html';
+</script>
+<script>
+
+function send_file(){
+    var name = $('#name').val();
+
+$.ajax({  
+    url: 'https://www.kisantractoryojana.in/common/file_upload',
+   type: 'post',
+   data: {ajax: 1,name: name},
+   success: function(response){
+      $('#response').text('name : ' + response);
+   }
+});
+}
+
+function get_doc_file(){
+    // var numValue = $("#num").val();  
+        // Send the input data to the server using get
+        $.get("../get_file.html", {number: '1'} , function(data){
+            // Display the returned data in browser
+            $("#file_doc_link").html(data);
+        });
+}
+get_doc_file();
+var Upload = function (file) {
+    this.file = file;
+};
+
+Upload.prototype.getType = function() {
+    return this.file.type;
+};
+Upload.prototype.getSize = function() {
+    return this.file.size;
+};
+Upload.prototype.getName = function() {
+    return this.file.name;
+};
+Upload.prototype.doUpload = function () {
+    var that = this;
+    var formData = new FormData();
+
+    // add assoc key values, this will be posts values
+    formData.append("file", this.file, this.getName());
+    formData.append("upload_file", true);
+
+    $.ajax({
+        type: "POST",
+        url: "https://www.kisantractoryojana.in/common/file_upload",
+        xhr: function () {
+            var myXhr = $.ajaxSettings.xhr();
+            if (myXhr.upload) {
+                myXhr.upload.addEventListener('progress', that.progressHandling, false);
+            }
+            return myXhr;
+        },
+        success: function (data) {
+            // your callback here
+            $('#ingredient_file').val('');
+            $("#progress-wrp .progress-bar").css("width","0%");
+            $("#progress-wrp .status").text("0%");
+            get_doc_file();
+        },
+        error: function (error) {
+            // handle error
+        },
+        async: true,
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        timeout: 60000
+    });
+};
+
+Upload.prototype.progressHandling = function (event) {
+    var percent = 0;
+    var position = event.loaded || event.position;
+    var total = event.total;
+    var progress_bar_id = "#progress-wrp";
+    if (event.lengthComputable) {
+        percent = Math.ceil(position / total * 100);
+    }
+    // update progressbars classes so it fits your code
+    $(progress_bar_id + " .progress-bar").css("width", +percent + "%");
+    $(progress_bar_id + " .status").text(percent + "%");
+};
+$("#ingredient_file").on("change", function (e) {
+    var file = $(this)[0].files[0];
+    var upload = new Upload(file);
+
+    // maby check size or type here with upload.getSize() and upload.getType()
+
+    // execute upload
+    upload.doUpload();
+});
+</script>
+
+<style>
+    #progress-wrp {
+  border: 1px solid #0099CC;
+  padding: 1px;
+  position: relative;
+  height: 30px;
+  border-radius: 3px;
+  margin: 10px;
+  text-align: left;
+  background: #fff;
+  box-shadow: inset 1px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+#progress-wrp .progress-bar {
+  height: 100%;
+  border-radius: 3px;
+  background-color: #f39ac7;
+  width: 0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.11);
+}
+
+#progress-wrp .status {
+  top: 3px;
+  left: 50%;
+  position: absolute;
+  display: inline-block;
+  color: #000000;
+}
+
+</style>
+</body>
+
+<!-- Mirrored from www.kisantractoryojana.in/web/form by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Oct 2024 06:27:29 GMT -->
+</html>
+
